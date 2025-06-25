@@ -275,17 +275,9 @@ metadata:
   run_ui: true
 
 test_plan:
-  current_focus:
-    - "Hero Section with Premium Design"
-    - "Navigation with Smooth Scroll"
-    - "Product Showcase Section"
-    - "Benefits Section"
-    - "About Section"
-    - "Testimonials Section"
-    - "Contact Form and CTA Section"
-    - "Responsive Design and Mobile Optimization"
+  current_focus: []
   stuck_tasks: []
-  test_all: true
+  test_all: false
   test_priority: "high_first"
 
 agent_communication:
