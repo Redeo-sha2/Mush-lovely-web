@@ -443,6 +443,193 @@ body {
   font-size: 0.9rem;
 }
 
+/* Social Media Section */
+.social-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.5s;
+}
+
+.social-card:hover:before {
+  left: 100%;
+}
+
+.social-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.social-card.whatsapp {
+  border-color: #25D366;
+}
+
+.social-card.whatsapp:hover {
+  border-color: #25D366;
+  box-shadow: 0 15px 35px rgba(37, 211, 102, 0.3);
+}
+
+.social-card.facebook {
+  border-color: #1877F2;
+}
+
+.social-card.facebook:hover {
+  border-color: #1877F2;
+  box-shadow: 0 15px 35px rgba(24, 119, 242, 0.3);
+}
+
+.social-card.instagram {
+  border-color: #E4405F;
+}
+
+.social-card.instagram:hover {
+  border-color: #E4405F;
+  box-shadow: 0 15px 35px rgba(228, 64, 95, 0.3);
+}
+
+.social-card.twitter {
+  border-color: #1DA1F2;
+}
+
+.social-card.twitter:hover {
+  border-color: #1DA1F2;
+  box-shadow: 0 15px 35px rgba(29, 161, 242, 0.3);
+}
+
+.social-card.phone {
+  border-color: #10b981;
+}
+
+.social-card.phone:hover {
+  border-color: #10b981;
+  box-shadow: 0 15px 35px rgba(16, 185, 129, 0.3);
+}
+
+.social-card.email {
+  border-color: #6366f1;
+}
+
+.social-card.email:hover {
+  border-color: #6366f1;
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.3);
+}
+
+.social-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.social-card.whatsapp .social-icon {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+}
+
+.social-card.facebook .social-icon {
+  background: linear-gradient(135deg, #1877F2, #166FE5);
+  color: white;
+}
+
+.social-card.instagram .social-icon {
+  background: linear-gradient(135deg, #E4405F, #C13584);
+  color: white;
+}
+
+.social-card.twitter .social-icon {
+  background: linear-gradient(135deg, #1DA1F2, #0d8bd9);
+  color: white;
+}
+
+.social-card.phone .social-icon {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+}
+
+.social-card.email .social-icon {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+}
+
+.social-content {
+  flex: 1;
+  text-align: left;
+}
+
+.social-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.social-description {
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.social-handle {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.social-card.whatsapp .social-handle {
+  color: #25D366;
+}
+
+.social-card.facebook .social-handle {
+  color: #1877F2;
+}
+
+.social-card.instagram .social-handle {
+  color: #E4405F;
+}
+
+.social-card.twitter .social-handle {
+  color: #1DA1F2;
+}
+
+.social-card.phone .social-handle {
+  color: #10b981;
+}
+
+.social-card.email .social-handle {
+  color: #6366f1;
+}
+
 /* Contact Form */
 .contact-form {
   max-width: 600px;
